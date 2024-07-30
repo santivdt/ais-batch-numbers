@@ -18,7 +18,6 @@ import {
 } from '@/components/ui/popover'
 import { useState } from 'react'
 import InfoCard from './info-card'
-import { CommandSeparator } from 'cmdk'
 
 export function Combobox() {
   const [open, setOpen] = useState(false)
@@ -32,6 +31,7 @@ export function Combobox() {
 
   const handleClick = (batch: Batch) => {
     console.log('clicked')
+    setValue(batch.number)
     setCurrentItem(batch)
     setOpen(false)
   }
@@ -67,11 +67,11 @@ export function Combobox() {
                     key={batch.number}
                     value={batch.number}
                     onSelect={() => handleClick(batch)}
-                    className='hover:cursor-pointer hover:bg-slate-400'
                   >
                     {batch.number} - {batch.fishery}
                   </CommandItem>
                 ))}
+                <CommandItem className='hover:cursor-pointer'>hi</CommandItem>
               </CommandGroup>
             </CommandList>
           </Command>
