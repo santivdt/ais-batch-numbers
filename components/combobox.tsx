@@ -26,12 +26,12 @@ export function Combobox() {
   const [currentItem, setCurrentItem] = useState<Batch | null>(null)
 
   const filteredBatches = batches.filter((batch) =>
-    batch.number.includes(inputValue)
+    batch.batch_number.includes(inputValue)
   )
 
   const handleClick = (batch: Batch) => {
     console.log('clicked')
-    setValue(batch.number)
+    setValue(batch.batch_number)
     setCurrentItem(batch)
     setOpen(false)
   }
@@ -47,7 +47,8 @@ export function Combobox() {
             className='w-[500px] justify-between'
           >
             {value
-              ? batches.find((batch) => batch.number === value)?.number
+              ? batches.find((batch) => batch.batch_number === value)
+                  ?.batch_number
               : 'Type your batch number...'}
             <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
           </Button>
@@ -64,14 +65,14 @@ export function Combobox() {
               <CommandGroup>
                 {filteredBatches.map((batch) => (
                   <CommandItem
-                    key={batch.number}
-                    value={batch.number}
+                    key={batch.batch_number}
+                    value={batch.batch_number}
                     onSelect={() => handleClick(batch)}
                   >
-                    {batch.number} - {batch.fishery}
+                    {batch.batch_number} - {batch.product} -{' '}
+                    {batch.fishery_name}
                   </CommandItem>
                 ))}
-                <CommandItem className='hover:cursor-pointer'>hi</CommandItem>
               </CommandGroup>
             </CommandList>
           </Command>
