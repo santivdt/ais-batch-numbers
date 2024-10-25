@@ -29,10 +29,10 @@ export function Combobox() {
     batch.batch_number.includes(inputValue)
   )
 
-  useEffect(() => {
-    setInputValue(batches[0].batch_number)
-    setCurrentItem(batches[0])
-  }, [])
+  // useEffect(() => {
+  //   setInputValue(batches[0].batch_number)
+  //   setCurrentItem(batches[0])
+  // }, [])
 
   const handleClick = (batch: Batch) => {
     setInputValue(batch.batch_number)
