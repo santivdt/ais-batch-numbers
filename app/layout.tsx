@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='font-metallophile bg-teal-500'>{children}</body>
+      <body className='font-metallophile bg-custom-ais'>{children}</body>
     </html>
   )
 }

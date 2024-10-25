@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        'custom-ais': '#06A89C',
+      },
       fontFamily: {
         metallophile: ['Metallophile Sp8 Light Regular', 'sans-serif'],
       },
