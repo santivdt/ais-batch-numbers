@@ -13,6 +13,7 @@ export type Batch = {
   url?: string
   product?: string
   fishery_name: string
+  img?: string
 }
 
 export const batches: Batch[] = [
@@ -22,7 +23,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild coho salmon (Oncorhynchus kisutch), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -33,6 +34,7 @@ export const batches: Batch[] = [
     batch_number: '508332',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Coho Salmon',
+    img: '/candied-coho-salmon.jpg',
   },
   {
     product_source: 'Wild Coho Salmon',
@@ -40,7 +42,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild coho salmon (Oncorhynchus kisutch), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -51,6 +53,7 @@ export const batches: Batch[] = [
     batch_number: '608332',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Coho Salmon',
+    img: '/candied-coho-salmon.jpg',
   },
   {
     product_source: 'Wild Coho Salmon',
@@ -58,7 +61,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild coho salmon (Oncorhynchus kisutch), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -69,6 +72,7 @@ export const batches: Batch[] = [
     batch_number: '508331',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Coho Salmon',
+    img: '/candied-coho-salmon.jpg',
   },
   {
     product_source: 'Wild Coho Salmon',
@@ -76,7 +80,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild coho salmon (Oncorhynchus kisutch), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -87,6 +91,7 @@ export const batches: Batch[] = [
     batch_number: '505141',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Coho Salmon',
+    img: '/candied-coho-salmon.jpg',
   },
   {
     product_source: 'Wild Coho Salmon',
@@ -94,7 +99,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild coho salmon (Oncorhynchus kisutch), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -105,6 +110,7 @@ export const batches: Batch[] = [
     batch_number: '605141',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Coho Salmon',
+    img: '/candied-coho-salmon.jpg',
   },
   {
     product_source: 'Wild Pink Salmon',
@@ -113,7 +119,7 @@ export const batches: Batch[] = [
     location:
       'Harrison River and adjacent Lower Fraser River, British Columbia – CANADA',
     fishery:
-      'Fisherman from members of Sts’ailes and Scowlitz for the Harrison Salmon Producers / River Select Fisheries Cooperative',
+      'Fishermen from members of Sts’ailes and Scowlitz for the Harrison Salmon Producers / River Select Fisheries Cooperative',
     ingredients_en:
       'wild pink salmon (Oncorhynchus gorbuscha) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
     ingredients_fr:
@@ -123,6 +129,7 @@ export const batches: Batch[] = [
     batch_number: '604532',
     fishery_name: 'Harrison Salmon Producers',
     product: 'Candied Wild Pink Salmon',
+    img: '/candied-pink-salmon.jpg',
   },
   {
     product_source: 'Wild Pink Salmon',
@@ -131,7 +138,7 @@ export const batches: Batch[] = [
     location:
       'Harrison River and adjacent Lower Fraser River, British Columbia – CANADA',
     fishery:
-      'Fisherman from members of Sts’ailes and Scowlitz for the Harrison Salmon Producers / River Select Fisheries Cooperative',
+      'Fishermen from members of Sts’ailes and Scowlitz for the Harrison Salmon Producers / River Select Fisheries Cooperative',
     ingredients_en:
       'wild pink salmon (Oncorhynchus gorbuscha) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
     ingredients_fr:
@@ -141,13 +148,14 @@ export const batches: Batch[] = [
     batch_number: '504532',
     fishery_name: 'Harrison Salmon Producers',
     product: 'Candied Wild Pink Salmon',
+    img: '/candied-pink-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -158,6 +166,7 @@ export const batches: Batch[] = [
     batch_number: '507431',
     fishery_name: 'Gitanyow',
     product: 'Candied Wild Sockeye Salmon',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -165,7 +174,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -176,6 +185,7 @@ export const batches: Batch[] = [
     batch_number: '509031',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -183,7 +193,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -194,6 +204,7 @@ export const batches: Batch[] = [
     batch_number: '508931',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -201,7 +212,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -212,6 +223,7 @@ export const batches: Batch[] = [
     batch_number: '608831',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -219,7 +231,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -230,6 +242,7 @@ export const batches: Batch[] = [
     batch_number: '508331',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -237,7 +250,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -248,6 +261,7 @@ export const batches: Batch[] = [
     batch_number: '608931',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -255,7 +269,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -266,6 +280,7 @@ export const batches: Batch[] = [
     batch_number: '605142',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -273,7 +288,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -284,6 +299,7 @@ export const batches: Batch[] = [
     batch_number: '505241',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -291,7 +307,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -302,6 +318,7 @@ export const batches: Batch[] = [
     batch_number: '605241',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Chinook Salmon',
@@ -309,7 +326,7 @@ export const batches: Batch[] = [
     FAO_Area: '67 – Pacific Ocean',
     location: 'Port Alberni, BC, British Columbia – CANADA',
     fishery:
-      'Fisherman from by members of the Hupacasath and Tseshaht First Nations',
+      'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
     ingredients_en:
       'wild chinook salmon (Oncorhynchus tshawytscha), sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -320,13 +337,14 @@ export const batches: Batch[] = [
     batch_number: '605242',
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Chinook Salmon',
+    img: '/candied-chinook-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -337,13 +355,14 @@ export const batches: Batch[] = [
     batch_number: '607332',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -354,13 +373,14 @@ export const batches: Batch[] = [
     batch_number: '507332',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -371,13 +391,14 @@ export const batches: Batch[] = [
     batch_number: '607431',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -388,13 +409,14 @@ export const batches: Batch[] = [
     batch_number: '507432',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -405,13 +427,14 @@ export const batches: Batch[] = [
     batch_number: '534721',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -422,13 +445,14 @@ export const batches: Batch[] = [
     batch_number: '532122',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -439,13 +463,14 @@ export const batches: Batch[] = [
     batch_number: '530121',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -456,13 +481,14 @@ export const batches: Batch[] = [
     batch_number: '630121',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -473,13 +499,14 @@ export const batches: Batch[] = [
     batch_number: '519622',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
   {
     product_source: 'Wild Sockeye Salmon',
     species: 'Oncorhynchus nerka',
     FAO_Area: '67 – Pacific Ocean',
     location: 'Meziadin Fishway and the Nass River, British Columbia – CANADA',
-    fishery: 'Fisherman from by members of the Gitanyow First Nations',
+    fishery: 'Fishermen from members of the Gitanyow First Nations',
     harvest_method: 'Dipnet and Fishwheel',
     ingredients_en:
       'wild sockeye salmon (Oncorhynchus nerka) , sugar, salt, natural alder wood smoke. May contain traces of gluten or soy.',
@@ -490,5 +517,6 @@ export const batches: Batch[] = [
     batch_number: '519621',
     product: 'Candied Wild Sockeye Salmon',
     fishery_name: 'Gitanyow',
+    img: '/candied-sockeye-salmon.jpg',
   },
 ]

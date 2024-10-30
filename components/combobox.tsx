@@ -18,10 +18,16 @@ import { Batch, batches } from '@/lib/batch'
 import { ChevronsUpDown, Search } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import InfoCard from './info-card'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
+import Image from 'next/image'
 
 export function Combobox() {
   const [open, setOpen] = useState(false)
-  const [showFaq, setShowFaq] = useState(false)
   const [inputValue, setInputValue] = useState('')
   const [currentItem, setCurrentItem] = useState<Batch | null>(null)
 
@@ -89,17 +95,34 @@ export function Combobox() {
             </Command>
           </PopoverContent>
         </Popover>
-        <h2
-          className='text-yellow-400 font-bold text-lg cursor-pointer'
-          onClick={() => setShowFaq(!showFaq)}
-        >
-          Where is my batch number located?
-        </h2>
-        {showFaq && (
-          <p className='text-white'>
-            Look for the batch number next to the best before date on the back
-            of your product.
-          </p>
+        {currentItem && currentItem.img && (
+          <Image
+            src={currentItem.img}
+            alt={currentItem.product!}
+            width={300}
+            height={300}
+            className='mx-auto mt-4'
+          />
+        )}
+        {!currentItem && (
+          <Accordion type='single' collapsible>
+            <AccordionItem value='item-1'>
+              <AccordionTrigger className='text-yellow-400 font-bold text-lg'>
+                Where is my batch number located?
+              </AccordionTrigger>
+              <AccordionContent className='text-white text-lg'>
+                Look for the batch number next to the best before date on the
+                back of your product.
+                <Image
+                  src='/batch-number.png'
+                  alt='batch number'
+                  width={300}
+                  height={300}
+                  className='mt-4'
+                />
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         )}
       </div>
       <div className='flex-1'>
