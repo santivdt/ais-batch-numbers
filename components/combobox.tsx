@@ -53,12 +53,14 @@ export function Combobox() {
           Type your batch # and find out where your fish was caught:
         </p>
         <Popover open={open} onOpenChange={setOpen}>
-          <PopoverTrigger asChild>
+          <PopoverTrigger asChild onMouseDown={(e) => e.preventDefault()}>
             <Button
               variant='outline'
               role='combobox'
               aria-expanded={open}
               className='justify-between text-xl'
+              onFocus={(e) => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               <span className='text-rose-600 flex items-center gap-2'>
                 <Search className='w-4 h-4 text-black' />
