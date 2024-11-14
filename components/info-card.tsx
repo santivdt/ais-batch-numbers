@@ -76,7 +76,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
             </li>
           </ul>
         </CardContent>
-        <CardFooter>
+        {/* <CardFooter>
           {batch && batch.url && (
             <Button variant='outline'>
               <a href={batch.url} target='_blank'>
@@ -84,7 +84,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
               </a>
             </Button>
           )}
-        </CardFooter>
+        </CardFooter> */}
       </Card>
     </>
   )
