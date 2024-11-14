@@ -1,5 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Source_Sans_3 } from 'next/font/google'
+
+const sourceSans = Source_Sans_3({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 export const metadata: Metadata = {
   title: 'AIS Tracability',
@@ -13,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='font-metallophile bg-custom-ais'>{children}</body>
+      <body className={`${sourceSans.className} bg-custom-ais`}>
+        {children}
+      </body>
     </html>
   )
 }

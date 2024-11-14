@@ -76,6 +76,7 @@ export function Combobox() {
                 placeholder='Search batch number...'
                 value={inputValue}
                 onValueChange={setInputValue}
+                className='text-lg'
               />
               <CommandEmpty>No batch found.</CommandEmpty>
               <CommandList>
@@ -85,6 +86,7 @@ export function Combobox() {
                       key={batch.batch_number}
                       value={batch.batch_number}
                       onSelect={() => handleClick(batch)}
+                      className='text-md'
                     >
                       {batch.batch_number} - {batch.product} -{' '}
                       {batch.fishery_name}

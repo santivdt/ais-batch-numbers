@@ -31,6 +31,18 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
               <span className='!font-normal'>{batch ? batch.product : ''}</span>
             </li>
             <li className='mb-2'>
+              <span className='font-bold'>Fishery:</span>{' '}
+              {batch && batch.url ? (
+                <a href={batch.url} target='_blank' className='underline'>
+                  {batch.fishery_name}
+                </a>
+              ) : batch ? (
+                batch.fishery_name
+              ) : (
+                ''
+              )}
+            </li>
+            <li className='mb-2'>
               <span className='font-bold'>Product source:</span>{' '}
               {batch ? batch.product_source : ''}
             </li>
@@ -41,10 +53,6 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
             <li className='mb-2'>
               <span className='font-bold'>Location:</span>{' '}
               {batch ? batch.location : ''}
-            </li>
-            <li className='mb-2'>
-              <span className='font-bold'>Fishery Information:</span>{' '}
-              {batch ? batch.fishery_name : ''}
             </li>
             <li className='mb-2'>
               <span className='font-bold'>Ingredients:</span>{' '}

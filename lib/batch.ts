@@ -73,6 +73,7 @@ export const batches: Batch[] = [
     fishery_name: 'Tsu-ma-uss Seafoods',
     product: 'Candied Wild Coho Salmon',
     img: '/candied-coho-salmon.jpg',
+    url: 'https://www.tsumauss.com/',
   },
   {
     product_source: 'Wild Coho Salmon',
