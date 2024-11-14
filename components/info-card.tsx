@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/card'
 import { Batch } from '@/lib/batch'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const InfoCard = ({ batch }: { batch: Batch | null }) => {
   return (
@@ -29,6 +30,10 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
             <li className='mb-2'>
               <span className=''>Product:</span>{' '}
               <span className='!font-normal'>{batch ? batch.product : ''}</span>
+            </li>
+            <li className='mb-2'>
+              <span className='font-bold'>Fishery:</span>{' '}
+              {batch ? ( <Link href={batch?.url}> batch.fishery_name </Link> ) : ''}
             </li>
             <li className='mb-2'>
               <span className='font-bold'>Fishery:</span>{' '}

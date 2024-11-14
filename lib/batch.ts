@@ -33,6 +33,7 @@ export const batches: Batch[] = [
     lot_number: '0538-2297',
     batch_number: '508332',
     fishery_name: 'Tsu-ma-uss Seafoods',
+    url:'nu.nl',
     product: 'Candied Wild Coho Salmon',
     img: '/candied-coho-salmon.jpg',
   },
