@@ -60,7 +60,6 @@ export function Combobox() {
               aria-expanded={open}
               className='justify-between text-xl'
               onFocus={(e) => e.preventDefault()}
-              onClick={(e) => e.preventDefault()}
             >
               <span className='text-rose-600 flex items-center gap-2'>
                 <Search className='w-4 h-4 text-black' />
