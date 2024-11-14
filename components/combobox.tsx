@@ -58,9 +58,9 @@ export function Combobox() {
               variant='outline'
               role='combobox'
               aria-expanded={open}
-              className='justify-between'
+              className='justify-between text-xl'
             >
-              <span className='text-rose-600 font-bold flex items-center gap-2'>
+              <span className='text-rose-600 flex items-center gap-2'>
                 <Search className='w-4 h-4 text-black' />
                 {inputValue
                   ? batches.find((batch) => batch.batch_number === inputValue)

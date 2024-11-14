@@ -28,7 +28,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
         <CardContent className='pt-6'>
           <ul>
             <li className='mb-2'>
-              <span className=''>Product:</span>{' '}
+              <span className='font-bold'>Product:</span>{' '}
               <span className='!font-normal'>{batch ? batch.product : ''}</span>
             </li>
             <li className='mb-2'>
@@ -84,7 +84,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
               className='bg-amber-500 border-amber-500 font-bold hover:bg-amber-600 hover:border-amber-600 hover:text-white'
             >
               <a href={batch.url} target='_blank'>
-                More about {batch.fishery_name}
+                Learn more about {batch.fishery_name}
               </a>
             </Button>
           )}
