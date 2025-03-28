@@ -21,7 +21,7 @@ export const batches: Batch[] = [
     product_source: 'Wild Coho Salmon',
     species: 'Oncorhynchus kisutch',
     FAO_Area: '67 – Pacific Ocean',
-    location: 'Port Alberni, BC, British Columbia – CANADA',
+    location: 'Port Alberni THE BERNNNN, BC, British Columbia – CANADA',
     fishery:
       'Fishermen from members of the Hupacasath and Tseshaht First Nations',
     harvest_method: 'ESSR',
@@ -33,7 +33,7 @@ export const batches: Batch[] = [
     lot_number: '0538-2297',
     batch_number: '508332',
     fishery_name: 'Tsu-ma-uss Seafoods',
-    url:'nu.nl',
+    url:'https://www.authenticindigenousseafood.ca/fisheries/tsu-ma-uss-seafoods/',
     product: 'Candied Wild Coho Salmon',
     img: '/candied-coho-salmon.jpg',
   },
