@@ -45,7 +45,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
             </li>
             <li className='mb-2'>
               <span className='font-bold'>First Nations:</span>{' '}
-              {batch ? batch.product_source : ''}
+              {batch ? batch.fishery : ''}
             </li>
             <li className='mb-2'>
               <span className='font-bold'>Product source:</span>{' '}
@@ -56,7 +56,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
               {batch ? batch.FAO_Area : ''}
             </li>
             <li className='mb-2'>
-              <span className='font-bold-italic'>Location:</span>{' '}
+              <span className='font-bold'>Location:</span>{' '}
               {batch ? batch.location : ''}
             </li>
             <li className='mb-2'>
@@ -64,7 +64,7 @@ const InfoCard = ({ batch }: { batch: Batch | null }) => {
               {batch ? batch.ingredients_en : ''}
             </li>
             <li className='mb-2'>
-              <span className='font-bold'>Ingrédients</span>{' '}
+              <span className='font-bold'>Ingrédients:</span>{' '}
               {batch ? batch.ingredients_fr : ''}
             </li>
             <li className='mb-2'>
